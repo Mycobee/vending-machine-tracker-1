@@ -14,6 +14,8 @@ RSpec.describe 'as a visitor on a snack show page' do
 
 		expect(page).to have_content(@snack_2.name)
 		expect(page).to have_content(@snack_2.price)
+
+		expect(page).to have_content(@machine.average_price)
 	end
 end
 #```
